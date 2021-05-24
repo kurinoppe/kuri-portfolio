@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KURI_Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <script src="/js/top.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+   <script>
+   $(function() {
+      const hum = $('#hamburger, .close')
+      const nav = $('.sp-nav')
+      hum.on('click', function(){
+         nav.toggleClass('toggle');
+      });
+   });
+
+   jQuery(function ($) {
+  var fadeIn = $('.fade-in');
+  $(window).scroll(function () {
+    $(fadeIn).each(function () {
+      var offset = $(this).offset().top;
+      var scroll = $(window).scrollTop(); 
+      var windowHeight = $(window).height();
+      if (scroll > offset - windowHeight + 150) {
+        $(this).addClass("scroll-in");
+      }
+    });
+  });
+});
+   </script>
+</head>
+<body>
+    <div class="margin">
+    <header class="header">
+            <!-- pc用ヘッダー -->
+            <nav class="pc-nav">
+                <ul>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#price">PRICE</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <!-- sp用ヘッダー -->
+            <nav class="sp-nav">
+                <ul>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#price">PRICE</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li class="close"><span>閉じる</span></li>
+                </ul>
+            </nav>
+            <div id="hamburger">
+                <span></span>
+            </div>
+    </header>
+
+    <div class="top fade-in fade-in-up">
+        <div class="top-cont">
+            <h1 class="top-title">KURI's Portfolio</h1>
+            <p class="top-text">-Web Creater-</p>
+        </div>
+        
+    </div>
+
+    <main class="content">
+
+        <section id="works" class="cmn-section -gray fade-in fade-in-up">
+            <div class="inner ">
+                <div class="section-title">
+                    <h2 class="title">WORKS</h2>
+                    <p class="desc">Web制作の見本(サンプル)です。<br>練習用の架空サイトも含んでおります。</p>
+                </div>
+                <div class="section-contents">
+                    <div class="works-list">
+                        <figure class="works-item fade-in fade-in-up">
+                            <a href="#" class="works-image">
+                                <img src="/image/kuri-portpolio.png" alt="">
+                            </a>
+                            <div class="works-text-box">
+                                <div class="works-title">KURI's Portfolio</div>
+                                <div class="works-text">私の事業サイト</div>
+                            </div>
+                        </figure>
+                        
+                        <figure class="works-item fade-in fade-in-up">
+                            <a href="https://dainojiblog.xsrv.jp" class="works-image">
+                                <img src="/image/onsen.png" alt="">
+                            </a>
+                            <div class="works-text-box">
+                                <div class="works-title">温泉旅館サイト</div>
+                                <div class="works-text">練習用の架空の温泉旅館HP</div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="cmn-section fade-in fade-in-up">
+            <div class="inner">
+                <div class="section-title">
+                    <h2 class="title">SERVICES</h2>
+                    <p class="desc">サービス内容</p>
+                </div>
+                <div class="section-contents">
+                    <div class="serv-list">
+                        <div class="serv-item fade-in fade-in-up">
+                            <div class="serv-image-box">
+                                <i class="fas fa-code "></i>
+                            </div>
+                            <div class="serv-text-box">
+                                <div class="serv-title">コーディング代行</div>
+                                <div class="serv-text">
+                                    お客様の希望に合わせて、1ページ単位からのコーディングや下層ページのみもお受け致します。
+                                    簡単なカスタマイズなどお気軽にお声がけください
+                                </div>
+                            </div>
+                        </div>
+                        <div class="serv-item fade-in fade-in-up">
+                            <div class="serv-image-box">
+                                <i class="fas fa-laptop-code "></i>
+                            </div>
+                            <div class="serv-text-box">
+                                <div class="serv-title">LP制作</div>
+                                <div class="serv-text">
+                                    商品の魅力やイメージを引き出したページを作成します。レスポンシブ化もお任せ下さい。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="serv-item fade-in fade-in-up">
+                            <div class="serv-image-box">
+                                <i class="fas fa-sitemap "></i>
+                            </div>
+                            <div class="serv-text-box">
+                                <div class="serv-title">コーポレートサイト作成</div>
+                                <div class="serv-text">
+                                    お客様のサービスの魅力を最大限に伝えるWebサイト制作をお手伝いいたします。
+                                    最大限の効果を発揮できるサイト作りを一緒に実現しましょう。
+                                    保守・運用までサポートいたします
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="price" class="cmn-section -gray fade-in fade-in-up">
+            <div class="inner">
+                <div class="section-title">
+                    <h2 class="title">PRICE</h2>
+                    <p class="desc">料金表</p>
+                </div>
+                <div class="price-contents">
+                    <ul class="price-list">
+                        <li>コーディング(下層)</li>
+                        <li>1,0000円〜</li>
+                    </ul>
+                    <ul class="price-list">
+                        <li>コーディング(下層)</li>
+                        <li>1,0000円〜</li>
+                    </ul>
+                    <ul class="price-list">
+                        <li>コーディング(下層)</li>
+                        <li>1,0000円〜</li>
+                    </ul>
+                </div>
+                <div class="price-tips">
+                    <p class="tips-text">こちらの金額はあくまで目安です。
+                        <br>詳細はお問合せ時にご確認ください。些細なことでも気楽にご相談ください。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="cmn-section fade-in fade-in-up">
+            <div class="inner">
+                <div class="section-title">
+                    <h2 class="title">ABOUT</h2>
+                    <p class="desc">私について</p>
+                </div>
+                <div class="about-contents">
+                    <div class="about-image-con fade-in fade-in-up">
+                        <img class="about-image" src="/image/IMG_6474.PNG" alt="">
+                    </div>
+                    <div class="about-desc fade-in fade-in-up">
+                        <p>当サイトをご覧いただきありがとうございます。
+                            栗原大地（クリハラ ダイチ）と申します。
+                        新潟在住の26歳、現在WEB制作フリーランスとして活動しています。
+                        </p>
+                        <p>円滑で気持ちの良いコミュニケーション・素早いレスポンスを心がけております。
+                            クライアント様と良きパートナーになれるよう、誠意を持って対応させていただきます。
+                        </p>
+                            ホームページ・サイトをつくるのが初めてのクライアント様に対しても、親身になって対応させていただきますのでご安心ください。
+                        </p>
+                        <p>また、制作案件の継続受注にも対応可能です。良い関係性を築けるよう努めさせていただきます。
+                            どうぞよろしくお願いいたします。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skill" class="cmn-section -gray fade-in fade-in-up">
+            <div class="inner">
+                <div class="section-title">
+                    <h2 class="title">SKILL</h2>
+                    <p class="desc">スキルセット</p>
+                </div>
+                <div class="skill-contents">
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-image-cont">
+                                <img class="skill" src="/image/HTML.jpg" alt="">
+                            </div>
+                            <div class="skill-level">
+                                <div class="rate" data-rate="5"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-image-cont">
+                                <img class="skill-image" src="/image/CSS.jpg" alt="">
+                            </div>
+                            <div class="skill-level">
+                                <div class="rate" data-rate="5"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-image-cont">
+                                <img class="skill-image" src="/image/Javascript.jpg" alt="">
+                            </div>
+                            <div class="skill-level">
+                                <div class="rate" data-rate="4"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-image-cont">
+                                <img class="skill-image" src="/image/Wordpress.jpg" alt="">
+                            </div>
+                            <div class="skill-level">
+                                <div class="rate" data-rate="5"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-image-cont">
+                                <img class="skill-image" src="/image/xd.jpg" alt="">
+                            </div>
+                            <div class="skill-level">
+                                <div class="rate" data-rate="4"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-image-cont">
+                                <img class="skill-image" src="/image/react(1).jpeg" alt="">
+                            </div>
+                            <div class="skill-level">
+                                <div class="rate" data-rate="3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="cmn-section fade-in fade-in-up">
+            <div class="inner">
+                <div class="section-title">
+                    <h2 class="title">CONTACT</h2>
+                    <p class="desc">お問い合わせは、メールにてお願い致します。</p>
+                </div>
+                <div class="contact-contents">
+                    <span class="contact-ad">0ba7x015385241e@gmail.com</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="topScroll" class="topIcon" onclick="goTop()">Top</div>
+
+    <footer class="footer">
+        <div class="footer-con">
+            <div class="copyright">Copyright Daichi Kurihara. All Rights Reserved.</div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
