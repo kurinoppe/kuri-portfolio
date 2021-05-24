@@ -145,8 +145,8 @@ a {
 
 
 .top{
-  background-image: url(https://kurinoppe.github.io/kuri-portfolio/image/top2.JPG);
-  background-position: center;
+  background-image: url(https://kurinoppe.github.io/kuri-portfolio/image/top1.png);
+  background-repeat: round;
 }
 .top-cont{
   padding-top: 200px;
