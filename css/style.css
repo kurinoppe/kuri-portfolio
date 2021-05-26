@@ -333,7 +333,7 @@ a {
 .price-list{
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  font-size: small;
   margin: 0 auto;
   border-bottom: dotted thin rgb(62, 106, 107);
   line-height: 8vh;
@@ -353,6 +353,7 @@ a {
 @media screen and (min-width:768px){
   .price-list{
     width: 50%;
+    font-size: 16px;
   }
 }
 /* abot */
